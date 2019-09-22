@@ -34,6 +34,7 @@ import static org.springframework.web.bind.annotation.RequestMethod.PUT;
  */
 @RestController
 @RequestMapping("/ordenes")
+@CrossOrigin("*")
 public class OrdenesController {
 
     @Autowired

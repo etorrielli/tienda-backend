@@ -9,16 +9,16 @@ package com.tienda.dto;
  * @author etorrielli
  */
 public class Response {
-    private Integer status;
+    private int status;
     private String message;
     private Object data;
 
-    public Response(Integer codigoRespuesta, String mensajeRespuesta) {
+    public Response(int codigoRespuesta, String mensajeRespuesta) {
         this.status = codigoRespuesta;
         this.message = mensajeRespuesta;
     }
 
-    public Response(Integer codigoRespuesta, String mensajeRespuesta, Object data) {
+    public Response(int codigoRespuesta, String mensajeRespuesta, Object data) {
         this.status = codigoRespuesta;
         this.message = mensajeRespuesta;
         this.data = data;
@@ -33,7 +33,7 @@ public class Response {
         return status;
     }
 
-    public void setStatus(Integer status) {
+    public void setStatus(int status) {
         this.status = status;
     }
 
